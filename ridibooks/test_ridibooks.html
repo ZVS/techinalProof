@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://ridibooks.com/search/?q=%EC%A0%95%EC%9D%98%EB%9E%80 -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta charset="utf-8">
+    <meta name="ROBOTS" content="ALL">
+  <meta name="author" content="RIDI Corporation">
+  <meta name="keywords" content="리디북스,리디,ridibooks,ridi,책,전자책,ebook">
+  <meta name="format-detection" content="telephone=no">
+    <!--[if IE]>
+    <meta name="msapplication-TileImage" content="http://static.ridibooks.com/books/images/favicon/favicon_win8.png"/>
+    <meta name="msapplication-TileColor" content="#2291db"/>
+  <![endif]-->
+  <title>정의란 검색 결과 - 리디북스</title>
+  
+    <link rel="apple-touch-icon-precomposed" href="http://static.ridibooks.com/books/images/favicon/favicon_72.png">
+  <link rel="apple-touch-icon-precomposed" href="http://static.ridibooks.com/books/images/favicon/favicon_114.png" sizes="114x114">
+  <link rel="shortcut icon" href="http://static.ridibooks.com/books/images/favicon/ridibooks.ico">
+  
+        <link rel="stylesheet" media="screen" href="http://static.ridibooks.com/books/css/common/nanumgothic.css?20141231113403">
+    <link rel="stylesheet" media="screen" href="http://static.ridibooks.com/books/css/page_base.css?20150214160103">
+  <link rel="stylesheet" media="screen" href="http://static.ridibooks.com/books/css/common/vex-theme-ridi-instant-slidedown.css?20150213112503">
+        <link rel="stylesheet" type="text/css" media="screen" href="./test_ridibooks_files/page_search_result.css">
+    
+    <!--[if lt IE 9]>
+    <script src="http://static.ridibooks.com/books/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+  <![endif]-->
+    <!--[if (gte IE 8)|!(IE)]><!-->
+    <script async="" src="./test_ridibooks_files/analytics.js"></script><script type="text/javascript" async="" src="./test_ridibooks_files/mixpanel-2.2.min.js"></script><script src="./test_ridibooks_files/raven.min.js"></script>
+    <script>
+      Raven.config('https://a7a66e73e7174d88ac82e8cfacc89500@app.getsentry.com/27579', {
+        whitelistUrls: ['ridibooks.com', /\.ridibooks.com$/]
+      }).install();
+    </script>
+   <!--<![endif]-->
+    <script src="./test_ridibooks_files/require.min.js"></script>
+  <script src="./test_ridibooks_files/jquery.min.js"></script>
+  <script>
+    requirejs.config({
+      baseUrl: "http://static.ridibooks.com",
+      paths: {
+        spin: 'books/dist/spin.min',
+        plugins: 'books/dist/plugins.min.js?20150209153602',
+        ridi: "books/dist/ridi.min.js?20150213194802",
+        reading_now: "books/dist/reading_now.min.js?20141224113303",
+        psn_recommend: "books/dist/psn_recommend.min.js?20140827205705",
+        rating: "books/dist/rating.min.js?20150115184302",
+        review: "books/dist/review.min.js?20150127120202",
+        toast: 'books/dist/toast.min.js?20150213112503',
+        cart: 'books/dist/cart.lib.min.js?20150212142301',
+        wishlist: 'books/dist/wishlist.lib.min.js?20150212142301',
+
+        placeholder: 'books/bower_components/jquery-placeholder/jquery.placeholder.min',
+        cookie: 'books/dist/jquery.cookie.min',
+        countdown: 'books/bower_components/jquery.countdown/dist/jquery.countdown.min',
+        TweenLite: 'books/bower_components/gsap/src/minified/TweenLite.min',
+        EasePack: 'books/bower_components/gsap/src/minified/easing/EasePack.min',
+        CSSPlugin: 'books/bower_components/gsap/src/minified/plugins/CSSPlugin.min',
+        ScrollToPlugin: 'books/bower_components/gsap/src/minified/plugins/ScrollToPlugin.min',
+
+        autosize: 'books/bower_components/jquery-autosize/jquery.autosize.min',
+        mousewheel: 'books/bower_components/jquery-mousewheel/jquery.mousewheel.min',
+        perfectscrollbar: 'books/bower_components/perfect-scrollbar/min/perfect-scrollbar.with-mousewheel.min',
+
+        vex: 'books/bower_components/vex/js/vex.min',
+        vexDialog: 'books/bower_components/vex/js/vex.dialog.min',
+
+        storejs: 'books/bower_components/store.js/store.min'
+      },
+      shim: {
+        plugins: ['jquery'],
+        ridi: ['jquery', 'plugins']
+      }
+    });
+  </script>
+  <script>
+    require(['jquery', 'plugins', 'ridi', 'placeholder'], function ($) {
+      $('img.lazy').lazyload({ effect: 'fadeIn', threshold: 50, failure_limit: 50 });
+
+      $(function () {
+        notice_scroll('notice_footer');
+        $('#book_search').placeholder();
+
+        $('a[data-trackable]').click(function (e) {
+          var te = $(this).data('trackable').split(',');
+          ga('send', 'event', te[0], te[1], te[2]);
+          return true;
+        });
+      });
+    });
+      </script>
+  <script>
+    function Rankey_Mark_Win(){
+      window.open('//www.rankey.com/rank/cert/cert_pop.php?mark_no=20150128-B001','Rankey_pop','width=700,height=800,scrollbars=yes');
+    }
+  </script>
+
+      
+    <script>
+    $(function() {
+
+      $('#book_search').val('정의란');
+
+            $('.more_author_list_button, #more_category_button').click(function() {
+        if ($(this).hasClass('closed')) {
+          $(this).removeClass('closed').addClass('opened');
+        } else {
+          $(this).addClass('closed').removeClass('opened');
+          $('html, body').animate({
+            scrollTop: $("#page_search_result").offset().top
+          }, 500);
+        }
+        $(this).siblings('ul').find('.over_list').slideToggle();
+      });
+    });
+  </script>
+  <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+      for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f)}})(document,window.mixpanel||[]);
+    mixpanel.init("d062784eac90c5b572a6e3557f8e87f5");</script><!-- end Mixpanel -->
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="placeholder" src="./test_ridibooks_files/jquery.placeholder.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="plugins" src="./test_ridibooks_files/plugins.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="ridi" src="./test_ridibooks_files/ridi.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="cookie" src="./test_ridibooks_files/jquery.cookie.min.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="spin" src="./test_ridibooks_files/spin.min.js"></script><style type="text/css"></style><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<!--[if lte IE 8]>
+<body id="browser_ie8">
+<![endif]-->
+<!--[if IE 9]>
+<body id="browser_ie9">
+<![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<body id="browser_modern">
+<!--<![endif]-->
+  <div id="ridi_books">
+        <header id="books_header">
+      <div class="header_top">
+        <div class="top_contents">
+          <h1 id="main_logo">
+            <a href="http://ridibooks.com/" data-trackable="GNB,click,main.pc">
+              <span class="icon-logo_ridibooks_1"></span>
+              <span class="hidden">RIDIBOOKS</span>
+            </a>
+          </h1><hr>                    <div class="top_left">
+            <h2><a data-trackable="GNB,click,ridishop_on_top.pc" href="http://shop.ridibooks.com/"><span class="icon-logo_ridishop"></span><span class="hidden">RIDISHOP</span><span class="icon-arrow_9_right"></span></a></h2>
+            <ul class="ridishop_menu">
+              <li><span class="icon-dot"></span><a data-trackable="GNB,click,ridishop_on_top_ipad.pc" href="http://shop.ridibooks.com/Category/44">아이패드</a></li>
+              <li><span class="icon-dot"></span><a data-trackable="GNB,click,ridishop_on_top_androidtap.pc" href="http://shop.ridibooks.com/Category/128">안드로이드 탭</a></li>
+              <li><span class="icon-dot"></span><a data-trackable="GNB,click,ridishop_on_top_accessory.pc" href="http://shop.ridibooks.com/Category/41">액세서리</a></li>
+              <li class="text_banner"><span class="icon-arrow_1_left"></span><span class="text_wrapper">리디캐시 결제</span></li>
+            </ul><hr>
+          </div>                    <div class="top_right">
+            <h2 class="hidden">RIDIBOOKS 빠른메뉴</h2>
+            <ul class="ridibooks_quick_menu">
+              <li class="list_faq"><span class="icon-dot"></span><a href="http://ridibooks.com/support/" data-trackable="GNB,click,support.pc">고객센터</a></li>
+              <li class="list_flatrate"><span class="icon-dot"></span><a href="http://ridibooks.com/flatrate/products">자유이용권 구매</a></li>
+              <li class="list_appdown"><span class="icon-dot"></span><a href="http://ridibooks.com/support/app/download">뷰어 다운로드</a></li>
+                            <li class="list_cash"><span class="icon-dot"></span>
+                <a class="login_required" href="http://ridibooks.com/order/checkout/cash">
+                  <span class="icon-coin"></span> 리디캐시 충전
+                                  </a>
+              </li>
+                          </ul>
+          </div>          <hr class="clear_both">
+        </div>      </div>      <div class="header_middle">
+        <div class="middle_contents">
+          <div class="middle_left">
+            <div class="search_wrap">
+                            <form action="http://ridibooks.com/search/" id="search_form">
+                <fieldset>
+                  <legend class="hidden">리디북스 검색</legend>
+                                                                        <input type="search" id="book_search" name="q" class="search_window" autocomplete="off" placeholder="제목, 저자, 출판사 검색" value="정의란">
+                  <span class="icon-search"></span>
+                  <button class="search_del" id="btn_reset" type="button">
+                    <span class="icon-close_2"></span>
+                    <span class="hidden">검색어 삭제</span>
+                  </button>
+                  <button class="search_btn" type="submit">검색</button>
+                </fieldset>
+              </form>
+            </div>            <div class="search_preview" id="book_search_result"></div>          </div>          <div class="middle_right">
+            <ul class="right_list_wrapper">
+                                                <li class="menu_login"><a id="gnb_login_btn" href="javascript:showLoginPopup()"><span>로그인</span></a></li>
+                  <li class="menu_join"><a id="gnb_join_btn" href="javascript:showSignupPopup()"><span>회원가입</span></a></li>
+                                          </ul>
+          </div>          <hr class="clear_both">
+        </div>      </div>      <div class="header_bottom">
+        <div class="bottom_contents">
+          <div class="bottom_left">
+            <ul>
+              <li class="list_all_menu"><button id="show_all_menu_btn" type="button"><span class="icon-menu"></span>전체분야</button></li>
+              <li class="list_general"><a class="" href="http://ridibooks.com/?genre=general" data-trackable="MAIN,click,genre_general.pc"><span class="icon-book_3"></span>일반도서</a></li>
+              <li class="list_romance"><a class="" href="http://ridibooks.com/?genre=romance" data-trackable="MAIN,click,genre_romance.pc"><span class="icon-heart"></span>로맨스</a></li>
+              <li class="list_fantasy"><a class="" href="http://ridibooks.com/?genre=fantasy" data-trackable="MAIN,click,genre_fantasy.pc"><span class="icon-swords"></span>판타지/무협</a></li>
+              <li class="list_comic"><a class="" href="http://ridibooks.com/?genre=comic" data-trackable="MAIN,click,genre_comic.pc"><span class="icon-comic"></span>만화</a></li>
+            </ul>
+          </div>          <div class="bottom_right">
+            <ul>
+              <li class="list_best"><a href="http://ridibooks.com/bestsellers/" data-trackable="GNB,click,bestseller.pc"><span class="icon-crown"></span>베스트셀러</a></li>
+              <li class="list_recommend"><a href="http://ridibooks.com/personalized/" data-trackable="GNB,click,psn_recommend.pc"><span class="icon-thumb_up_1"></span>맞춤추천</a></li>
+              <li class="list_shocking"><a href="http://ridibooks.com/event/" data-trackable="GNB,click,event.pc"><span class="icon-lightning"></span>오늘의 혜택</a></li>
+            </ul>
+          </div>          <hr class="clear_both">
+          <div id="all_menu">
+            <h2 class="hidden">리디북스 전체분야</h2>
+  <div class="all_menu_wrapper">
+    <button id="hide_all_menu_btn" type="button">
+      <span class="icon-menu"></span>전체분야<span class="hidden"> 닫기</span>
+    </button>
+    <!-- 일반도서 메뉴 -->
+    <div class="menu_column menu_general">
+      <div class="column_box">
+                  <div class="list_wrap list_normal">
+                                              <div class="pc_hover general_menu_wrapper general_category_0 active">
+              <h3>
+                <a href="http://ridibooks.com/category/100">
+                  소설 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/100">소설 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/101">한국소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/102">영미소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/103">일본소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/117">중국소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/116">북유럽소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/114">독일소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/115">프랑스소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/104">기타국가소설</a></li>
+                                      <div class="category_separate"><hr></div>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/107">추리/미스터리/스릴러</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/123">SF소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/124">국내판타지소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/125">해외판타지소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/118">국내역사소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/119">해외역사소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/120">대체역사소설</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/121">동양고전문학</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/122">서양고전문학</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/109">라이트노벨</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_1 ">
+              <h3>
+                <a href="http://ridibooks.com/category/200">
+                  경영/경제 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/200">경영/경제 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/210">경영일반</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/220">경제일반</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/230">마케팅/세일즈</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/240">재테크/금융/부동산</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/250">CEO/리더십</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_2 ">
+              <h3>
+                <a href="http://ridibooks.com/category/400">
+                  인문/사회/역사 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/400">인문/사회/역사 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/410">인문</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/420">정치/사회</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/430">예술/문화</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/440">역사</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_3 ">
+              <h3>
+                <a href="http://ridibooks.com/category/300">
+                  자기계발 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/300">자기계발 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/310">성공/삶의자세</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/320">기획/창의/리더십</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/330">설득/화술/협상</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/340">취업/창업</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/350">여성</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/360">인간관계</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_4 ">
+              <h3>
+                <a href="http://ridibooks.com/category/110">
+                  에세이/시 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/110">에세이/시 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/111">에세이</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/112">시</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_5 ">
+              <h3>
+                <a href="http://ridibooks.com/category/800">
+                  여행 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/800">여행 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/810">국내여행</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/820">해외여행</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_6 ">
+              <h3>
+                <a href="http://ridibooks.com/category/700">
+                  종교 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/700">종교 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/710">종교일반</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/720">가톨릭</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/730">기독교(개신교)</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/740">불교</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/750">기타</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_7 ">
+              <h3>
+                <a href="http://ridibooks.com/category/1000">
+                  외국어 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/1000">외국어 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/1010">비즈니스영어</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1020">일반영어</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1030">제2외국어</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1040">어학시험</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_8 ">
+              <h3>
+                <a href="http://ridibooks.com/category/1100">
+                  과학/IT 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/1100">과학/IT 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/1110">과학/기술</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1130">수험서</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1140">IT 전문서</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1150">컴퓨터 활용</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_9 ">
+              <h3>
+                <a href="http://ridibooks.com/category/1900">
+                  진학/진로 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/1900">진학/진로 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/1901">공부법</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1902">특목고/자사고</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1903">대입 수시</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1904">대입 논술</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1905">대입 합격수기</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1906">진로 탐색</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1907">유학/MBA</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_10 ">
+              <h3>
+                <a href="http://ridibooks.com/category/500">
+                  건강/다이어트 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/500">건강/다이어트 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/510">다이어트/운동/스포츠</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/520">스타일/뷰티</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/530">건강</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_11 ">
+              <h3>
+                <a href="http://ridibooks.com/category/600">
+                  가정/생활 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/600">가정/생활 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/610">결혼/임신/출산</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/620">육아/자녀교육</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/630">취미/요리/기타</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_12 ">
+              <h3>
+                <a href="http://ridibooks.com/category/1300">
+                  어린이/청소년 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/1300">어린이/청소년 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/1310">유아</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1320">어린이</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1330">청소년</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_13 ">
+              <h3>
+                <a href="http://ridibooks.com/category/1400">
+                  해외도서 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/1400">해외도서 전체</a></li>
+                              </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_14 ">
+              <h3>
+                <a href="http://ridibooks.com/category/1200">
+                  악보 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/1200">악보 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/1201">가요/OST/POP</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1202">뉴에이지/재즈</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1203">클래식</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1204">밴드/합주</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1205">피아노/멜로디</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/1209">기타</a></li>
+                                                </ul>
+            </div>
+                                                          <div class="pc_hover general_menu_wrapper general_category_15 ">
+              <h3>
+                <a href="http://ridibooks.com/category/2000">
+                  잡지 
+                  <span class="icon-arrow_9_right"></span>
+                  <span class="icon-arrow_1_left"></span>
+                </a>
+              </h3>
+              <ul class="sub_category_wrapper">
+                <li><a href="http://ridibooks.com/category/2000">잡지 전체</a></li>
+                                  <li><a href="http://ridibooks.com/category/subcategory/2001">경영/재테크</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/2002">문학/교양</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/2003">여성/패션/뷰티</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/2004">디자인/예술</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/2005">건강/스포츠</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/2006">취미/여행/요리</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/2007">과학/IT</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/2008">종교</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/2009">만화</a></li>
+                                                    <li><a href="http://ridibooks.com/category/subcategory/2010">성인(19+)</a></li>
+                                                </ul>
+            </div>
+                                </div>
+      </div>
+    </div><!-- //.menu_column -->
+
+    <!-- 일반도서메뉴 서브 -->
+    <div class="menu_column menu_general_sub">
+      <div class="column_box">
+      </div>
+    </div><!-- //.menu_column -->
+
+    <!-- 로맨스 판무 메뉴 -->
+    <div class="menu_column menu_romance_fanmu">
+      <div class="column_box">
+                <h3><a class="title_romance" href="http://ridibooks.com/category/1700">로맨스 소설 <span class="icon-arrow_9_right"></span></a></h3>
+        <ul>
+                      <li><a href="http://ridibooks.com/category/subcategory/1701">현대물</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1702">역사/시대물</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1703">무협/판타지물</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1704">할리퀸소설</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1706">19+</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1707">BL소설</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1708">TL 19+</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1709">섹슈얼 로맨스</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1705">하이틴</a></li>
+                  </ul>
+                        <h3><a class="title_fanta" href="http://ridibooks.com/category/1710">판타지 소설 <span class="icon-arrow_9_right"></span></a></h3>
+        <h3><a class="title_mu" href="http://ridibooks.com/category/1720">무협 소설 <span class="icon-arrow_9_right"></span></a></h3>
+        <div class="flatrate_banner_wrapper">
+          <a href="http://ridibooks.com/category/subcategory/1710?flatrate=y&order=selling">
+            판타지 <br>자유이용권 도서
+            <span class="icon_wrapper"><span class="icon-arrow_9_right"></span></span>
+          </a>
+          <a href="http://ridibooks.com/category/subcategory/1720?flatrate=y&order=selling">
+            무협 <br>자유이용권 도서 
+            <span class="icon_wrapper"><span class="icon-arrow_9_right"></span></span>
+          </a>
+        </div>
+        
+      </div>
+    </div><!-- //.menu_column -->
+
+    <!-- 만화 메뉴 -->
+    <div class="menu_column menu_comic">
+      <div class="column_box">
+                <h3><a class="title_comic" href="http://ridibooks.com/category/1500">만화 <span class="icon-arrow_9_right"></span></a></h3>
+        <ul>
+                      <li><a href="http://ridibooks.com/category/subcategory/1521">국내순정</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1522">일본순정</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1551">할리퀸</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1529">BL</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1535">성인</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1519">드라마</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1513">무협</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1517">학원</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1515">액션</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1527">판타지/SF</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1525">스포츠</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1523">코믹</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1531">공포/추리</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1509">만화잡지</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1550">라이트노벨</a></li>
+                      <li><a href="http://ridibooks.com/category/subcategory/1540">TL노벨</a></li>
+                  </ul>
+        <div class="flatrate_banner_wrapper">
+          <a href="http://ridibooks.com/category/subcategory/1500?flatrate=y&order=selling">
+            만화 <br>자유이용권 도서 
+            <span class="icon_wrapper"><span class="icon-arrow_9_right"></span></span>
+          </a>
+        </div>
+      </div>
+    </div><!-- //.menu_column -->
+
+  </div><!-- //.all_menu_wrapper -->
+  <hr class="clear_both">
+          </div>        </div>      </div>    </header><hr>
+    
+        
+         
+    
+        <div id="books_contents">
+      <div>
+                          <section id="page_search_result">
+    <h2 class="hidden">검색 결과 페이지</h2>
+                                          <div class="result_list_wrapper">                <article class="book_result_wrapper">
+        <div class="book_result_header">
+          <h3 class="search_title_wrapper">
+            <span class="search_title">'정의란'</span> 도서 검색결과
+          </h3>
+                  </div>
+                        <ul class="search_books_filter">
+      <li><a class="on" href="./test_ridibooks_files/test_ridibooks.html">인기순</a></li>
+      <li><a href="http://ridibooks.com/search/?q=%EC%A0%95%EC%9D%98%EB%9E%80&order=recent">최신순</a></li>
+      <li><a href="http://ridibooks.com/search/?q=%EC%A0%95%EC%9D%98%EB%9E%80&order=grade">평점순</a></li>
+      <li><a href="http://ridibooks.com/search/?q=%EC%A0%95%EC%9D%98%EB%9E%80&order=price">낮은 가격순</a></li>
+    </ul>
+  
+        <div class="bookmacro_wrapper book_list_110">
+          <div class="book_style_list">
+                                            
+  <div id="book_593000425" class="rsg_book" data-book-id="593000425" data-review-display-id="" data-book-opened="1">
+        <div class="book_wrapper">
+      
+                    
+    <div class="book_thumbnail_wrap">
+    <div class="book_thumbnail">
+
+      
+      <span class="thumbnail_image">
+                  <img class="lazy thumbnail " src="./test_ridibooks_files/medium" data-original="http://misc.ridibooks.com/cover/593000425/medium" alt="정의란 무엇인가" data-log="" data-original-cover="http://misc.ridibooks.com/cover/593000425/xxlarge" style="display: inline;">
+        
+        <span class="image_lighting">
+          <img src="./test_ridibooks_files/book_lighting.png" alt="책 반사광">
+        </span>
+        <span class="image_side">
+          <img src="./test_ridibooks_files/book_side.png" alt="책 옆등">
+        </span>
+        <span class="image_border"></span>
+      </span>
+      
+                            
+                                                                          <span class="badge_discount">
+            <img src="./test_ridibooks_files/badge_blue.png" class="discount_bg" alt="할인율 bg">
+            <span class="discount_num">
+              <span class="num">10</span><span class="percent">%</span><span class="hidden">할인</span>
+            </span>          </span>
+              
+                    
+      
+              <a class="thumbnail_btn " href="http://ridibooks.com/v2/Detail?id=593000425&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+          <span class="hidden">상세페이지 바로가기</span>
+        </a>      
+      
+                    
+      
+    </div>  </div>
+      
+            <div class="book_metadata_wrap">
+        <div class="book_metadata_table_wrap">
+          <div class="book_metadata">
+                                                                <h3 class="meta_title ">
+          <a class="title_link " href="http://ridibooks.com/v2/Detail?id=593000425&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+        <span class="title_text">
+          
+                                    <strong class="title_point">정의란</strong> 무엇인가
+                              </span>
+      </a>
+      </h3>
+                        
+                                        <p class="meta_sub_title ">
+    (<strong class="title_point">정의란</strong> 무엇인가 해설집 포함)
+  </p>
+            
+            <ul class="meta_list_wrap first_list_wap">
+                                                    <li class="star_rate ">
+      <span class="star_wrap">
+                        <span class="icon-star_filled"></span>
+                    <span class="icon-star_filled"></span>
+                    <span class="icon-star_filled"></span>
+                    <span class="icon-star_filled"></span>
+                    <span class="icon-star_half"></span>
+      
+      </span>
+      <span class="participating_number">
+        38명
+      </span>
+    </li>  
+                            
+                                                <li class="author ">
+          <span>              <a href="http://ridibooks.com/author/8473">마이클 샌델</a>      </span>
+      </li>
+                            
+                                                
+              
+                            
+                                                
+              
+                                                <li class="publisher ">
+                  <a href="http://ridibooks.com/search/?q=%EC%B6%9C%ED%8C%90%EC%82%AC%3A%EC%99%80%EC%9D%B4%EC%A6%88%EB%B2%A0%EB%A6%AC">와이즈베리</a>
+  </li>
+              
+                            
+                            
+                            
+                            
+                                        </ul>
+            <ul class="meta_list_wrap">
+                                        </ul>
+                                      <p class="meta_description ">
+            <a class="" href="http://ridibooks.com/v2/Detail?id=593000425&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+        &lt;책소개&gt;
+
+한국에 ‘정의’ 열풍을 불러일으킨 마이클 샌델은 구제 금융, 대리 출산, 동성 결혼, 과거사 공개 사과 등 현대 사회에서 우리가 흔히 부딪히는 문제를 통해 ‘무엇이 정의로운가’에 대한 해답을 탐구했다. 이 책은 탁월한 정치 철학자들이 남긴 시대를 초월한 철학적인 ...
+      </a>
+        </p>
+                        
+            <ul class="meta_list_wrap">
+                            
+                            
+                            
+                                        </ul>
+                                                <div class="meta_detail_price ">
+      <table>
+        <caption class="hidden">상세가격</caption>
+        <tbody>
+                                <tr>
+              <th>구매</th>
+                              <td><span class="price">9,450원</span></td>
+                                            <td>(<del>10,500원</del> <span class="discount">10%↓</span>)</td>
+                          </tr>
+                  </tbody>
+      </table>
+    </div>  
+            
+                        
+                                        
+            
+                                  </div>
+          
+                    
+          
+                  </div>                        
+      </div>
+            
+    </div>    <hr class="hidden">
+  </div>
+    
+                                
+  <div id="book_672000036" class="rsg_book" data-book-id="672000036" data-review-display-id="" data-book-opened="1">
+        <div class="book_wrapper">
+      
+                    
+    <div class="book_thumbnail_wrap">
+    <div class="book_thumbnail">
+
+      
+      <span class="thumbnail_image">
+                  <img class="lazy thumbnail " src="./test_ridibooks_files/medium(1)" data-original="http://misc.ridibooks.com/cover/672000036/medium" alt="팀 켈러의 정의란 무엇인가" data-log="" data-original-cover="http://misc.ridibooks.com/cover/672000036/xxlarge" style="display: inline;">
+        
+        <span class="image_lighting">
+          <img src="./test_ridibooks_files/book_lighting.png" alt="책 반사광">
+        </span>
+        <span class="image_side">
+          <img src="./test_ridibooks_files/book_side.png" alt="책 옆등">
+        </span>
+        <span class="image_border"></span>
+      </span>
+      
+                            
+                                                                      
+                    
+      
+              <a class="thumbnail_btn " href="http://ridibooks.com/v2/Detail?id=672000036&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+          <span class="hidden">상세페이지 바로가기</span>
+        </a>      
+      
+                    
+      
+    </div>  </div>
+      
+            <div class="book_metadata_wrap">
+        <div class="book_metadata_table_wrap">
+          <div class="book_metadata">
+                                                                <h3 class="meta_title ">
+          <a class="title_link " href="http://ridibooks.com/v2/Detail?id=672000036&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+        <span class="title_text">
+          
+                                    팀 켈러의 <strong class="title_point">정의란</strong> 무엇인가
+                              </span>
+      </a>
+      </h3>
+                        
+                                        <p class="meta_sub_title ">
+    하나님의 은혜가 우리를 어떻게 정의롭게 만드는가
+  </p>
+            
+            <ul class="meta_list_wrap first_list_wap">
+                                                    <li class="star_rate ">
+      <span class="star_wrap">
+                        <span class="icon-star_empty"></span>
+                    <span class="icon-star_empty"></span>
+                    <span class="icon-star_empty"></span>
+                    <span class="icon-star_empty"></span>
+                    <span class="icon-star_empty"></span>
+      
+      </span>
+      <span class="participating_number">
+        0명
+      </span>
+    </li>  
+                            
+                                                <li class="author ">
+          <span>              <a href="http://ridibooks.com/author/2269">팀 켈러</a>      </span>
+      </li>
+                            
+                                                    <li class="translator ">
+              <span>              <a href="http://ridibooks.com/author/2920">최종훈</a>       역</span>
+          </li>  
+              
+                            
+                                                
+              
+                                                <li class="publisher ">
+                  <a href="http://ridibooks.com/search/?q=%EC%B6%9C%ED%8C%90%EC%82%AC%3A%EB%91%90%EB%9E%80%EB%85%B8">두란노</a>
+  </li>
+              
+                            
+                            
+                            
+                            
+                                        </ul>
+            <ul class="meta_list_wrap">
+                                        </ul>
+                                      <p class="meta_description ">
+            <a class="" href="http://ridibooks.com/v2/Detail?id=672000036&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+        &lt;책소개&gt;
+
+'정의'에 관한 크고 작은 질문을 종식시키는 팀 켈러 목사의 성경적 정의론
+
+최근 미국 기독교 지도자들이 뽑은 ‘가장 영향력 있는 목회자’, 팀 켈러! 탁월한 변증가이자 미국 최고의 지성으로 손꼽히는 목사, 한국 유학생들에게 가장 존경받는 사람 중 한 명인 그...
+      </a>
+        </p>
+                        
+            <ul class="meta_list_wrap">
+                            
+                            
+                            
+                                        </ul>
+                                                <div class="meta_detail_price ">
+      <table>
+        <caption class="hidden">상세가격</caption>
+        <tbody>
+                                <tr>
+              <th>구매</th>
+                              <td><span class="price">9,800원</span></td>
+                                        </tr>
+                  </tbody>
+      </table>
+    </div>  
+            
+                        
+                                        
+            
+                                  </div>
+          
+                    
+          
+                  </div>                        
+      </div>
+            
+    </div>    <hr class="hidden">
+  </div>
+    
+                                
+  <div id="book_1457000001" class="rsg_book" data-book-id="1457000001" data-review-display-id="" data-book-opened="1">
+        <div class="book_wrapper">
+      
+                    
+    <div class="book_thumbnail_wrap">
+    <div class="book_thumbnail">
+
+      
+      <span class="thumbnail_image">
+                  <img class="lazy thumbnail " src="./test_ridibooks_files/medium(2)" data-original="http://misc.ridibooks.com/cover/1457000001/medium" alt="정의란 무엇인가는 틀렸다" data-log="" data-original-cover="http://misc.ridibooks.com/cover/1457000001/xxlarge" style="display: inline;">
+        
+        <span class="image_lighting">
+          <img src="./test_ridibooks_files/book_lighting.png" alt="책 반사광">
+        </span>
+        <span class="image_side">
+          <img src="./test_ridibooks_files/book_side.png" alt="책 옆등">
+        </span>
+        <span class="image_border"></span>
+      </span>
+      
+                            
+                                                                      
+                    
+      
+              <a class="thumbnail_btn " href="http://ridibooks.com/v2/Detail?id=1457000001&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+          <span class="hidden">상세페이지 바로가기</span>
+        </a>      
+      
+                    
+      
+    </div>  </div>
+      
+            <div class="book_metadata_wrap">
+        <div class="book_metadata_table_wrap">
+          <div class="book_metadata">
+                                                                <h3 class="meta_title ">
+          <a class="title_link " href="http://ridibooks.com/v2/Detail?id=1457000001&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+        <span class="title_text">
+          
+                                    <strong class="title_point">정의란</strong> 무엇인가는 틀렸다
+                              </span>
+      </a>
+      </h3>
+                        
+                                        <p class="meta_sub_title ">
+    
+  </p>
+            
+            <ul class="meta_list_wrap first_list_wap">
+                                                    <li class="star_rate ">
+      <span class="star_wrap">
+                        <span class="icon-star_filled"></span>
+                    <span class="icon-star_empty"></span>
+                    <span class="icon-star_empty"></span>
+                    <span class="icon-star_empty"></span>
+                    <span class="icon-star_empty"></span>
+      
+      </span>
+      <span class="participating_number">
+        1명
+      </span>
+    </li>  
+                            
+                                                <li class="author ">
+          <span>              <a href="http://ridibooks.com/author/8286">이한</a>      </span>
+      </li>
+                            
+                                                
+              
+                            
+                                                
+              
+                                                <li class="publisher ">
+                  <a href="http://ridibooks.com/search/?q=%EC%B6%9C%ED%8C%90%EC%82%AC%3A%EB%AF%B8%EC%A7%80%EB%B6%81%EC%8A%A4">미지북스</a>
+  </li>
+              
+                            
+                            
+                            
+                            
+                                        </ul>
+            <ul class="meta_list_wrap">
+                                        </ul>
+                                      <p class="meta_description ">
+            <a class="" href="http://ridibooks.com/v2/Detail?id=1457000001&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+        &lt;책소개&gt;
+
+*&nbsp;서울대학교&nbsp;철학과&nbsp;황경식&nbsp;교수,&nbsp;법학과&nbsp;조국&nbsp;교수&nbsp;추천&nbsp;도서
+
+현대&nbsp;정치철학에&nbsp;대한&nbsp;이해를&nbsp;바탕으로&nbsp;마이클&nbsp;샌델의&nbsp;정치철학을&nbsp;비판한&nbsp;본격&nbsp;정치교양서.&nbsp;마이클&nbsp;샌델의&nbsp;철학적&nbsp;방법론뿐만&nbsp;아니라&nbsp;흥미로운&nbsp;예시들&nbsp;뒤에&nbsp;숨겨진&nbsp;주장이&nbsp;매우&nbsp;위험하다는&nbsp;점을&nbsp;논증한...
+      </a>
+        </p>
+                        
+            <ul class="meta_list_wrap">
+                            
+                            
+                            
+                                        </ul>
+                                                <div class="meta_detail_price ">
+      <table>
+        <caption class="hidden">상세가격</caption>
+        <tbody>
+                                <tr>
+              <th>구매</th>
+                              <td><span class="price">8,000원</span></td>
+                                        </tr>
+                  </tbody>
+      </table>
+    </div>  
+            
+                        
+                                        
+            
+                                  </div>
+          
+                    
+          
+                  </div>                        
+      </div>
+            
+    </div>    <hr class="hidden">
+  </div>
+    
+                                
+  <div id="book_286000297" class="rsg_book" data-book-id="286000297" data-review-display-id="" data-book-opened="1">
+        <div class="book_wrapper">
+      
+                    
+    <div class="book_thumbnail_wrap">
+    <div class="book_thumbnail">
+
+      
+      <span class="thumbnail_image">
+                  <img class="lazy thumbnail " src="./test_ridibooks_files/medium(3)" data-original="http://misc.ridibooks.com/cover/286000297/medium" alt="[필독서 따라잡기] 정의란 무엇인가 - 마이클 샌델" data-log="" data-original-cover="http://misc.ridibooks.com/cover/286000297/xxlarge" style="display: inline;">
+        
+        <span class="image_lighting">
+          <img src="./test_ridibooks_files/book_lighting.png" alt="책 반사광">
+        </span>
+        <span class="image_side">
+          <img src="./test_ridibooks_files/book_side.png" alt="책 옆등">
+        </span>
+        <span class="image_border"></span>
+      </span>
+      
+                            
+                                                                      
+                    
+      
+              <a class="thumbnail_btn " href="http://ridibooks.com/v2/Detail?id=286000297&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+          <span class="hidden">상세페이지 바로가기</span>
+        </a>      
+      
+                    
+      
+    </div>  </div>
+      
+            <div class="book_metadata_wrap">
+        <div class="book_metadata_table_wrap">
+          <div class="book_metadata">
+                                                                <h3 class="meta_title ">
+          <a class="title_link " href="http://ridibooks.com/v2/Detail?id=286000297&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+        <span class="title_text">
+          
+                                    [필독서 따라잡기] <strong class="title_point">정의란</strong> 무엇인가 - 마이클 샌델
+                              </span>
+      </a>
+      </h3>
+                        
+                                        <p class="meta_sub_title ">
+    
+  </p>
+            
+            <ul class="meta_list_wrap first_list_wap">
+                                                    <li class="star_rate ">
+      <span class="star_wrap">
+                        <span class="icon-star_filled"></span>
+                    <span class="icon-star_half"></span>
+                    <span class="icon-star_empty"></span>
+                    <span class="icon-star_empty"></span>
+                    <span class="icon-star_empty"></span>
+      
+      </span>
+      <span class="participating_number">
+        2명
+      </span>
+    </li>  
+                            
+                                                <li class="author ">
+          <span>              <a href="http://ridibooks.com/author/21918">베리타스알파 편집국</a>      </span>
+      </li>
+                            
+                                                
+              
+                            
+                                                
+              
+                                                <li class="publisher ">
+                  <a href="http://ridibooks.com/search/?q=%EC%B6%9C%ED%8C%90%EC%82%AC%3A%EB%B2%A0%EB%A6%AC%ED%83%80%EC%8A%A4%EC%95%8C%ED%8C%8C%28%EC%A3%BC%29">베리타스알파(주)</a>
+  </li>
+              
+                            
+                            
+                            
+                            
+                                        </ul>
+            <ul class="meta_list_wrap">
+                                        </ul>
+                                      <p class="meta_description ">
+            <a class="" href="http://ridibooks.com/v2/Detail?id=286000297&_s=ret&_q=%EC%A0%95%EC%9D%98%EB%9E%80" data-log="">
+        &lt;책소개&gt;
+
+수능이 변별력을 잃음으로써 논술의 비중이 훨씬 커진 지금 논술의 바탕이 되는 책읽기는 그 중요성을 새삼 강조할 필요가 없다. 논술이 주어진 제시문을 비교 분석하고 통합하는 능력을 측정하는 시험이어서 꼭 책을 많이 읽어야 대비할 수 있다고는 할 수 없다. 하지만 독...
+      </a>
+        </p>
+                        
+            <ul class="meta_list_wrap">
+                            
+                            
+                            
+                                        </ul>
+                                                <div class="meta_detail_price ">
+      <table>
+        <caption class="hidden">상세가격</caption>
+        <tbody>
+                                <tr>
+              <th>구매</th>
+                              <td><span class="price">1,000원</span></td>
+                                        </tr>
+                  </tbody>
+      </table>
+    </div>  
+            
+                        
+                                        
+            
+                                  </div>
+          
+                    
+          
+                  </div>                        
+      </div>
+            
+    </div>    <hr class="hidden">
+  </div>
+    
+          <hr class="clear_both">
+      
+          </div>
+        </div>
+          <div class="module_paging"><ul class="paging_wrap"></ul></div>
+        </article>      </div>              <div class="result_category_wrapper">            <article class="result_category overthrow">
+    <h3 class="result_category_wrapper_title">분야</h3>
+    <ul class="result_category_list_wrapper">
+              <li>
+          <a href="./test_ridibooks_files/test_ridibooks.html" class="on">
+                          <span class="category_title">전체</span><span class="book_count"> (4)</span>
+                        <span class="mobile_active_border"></span>
+          </a>
+        </li>
+              <li>
+          <a href="http://ridibooks.com/search/?q=%EC%A0%95%EC%9D%98%EB%9E%80&category=%EC%9D%B8%EB%AC%B8">
+                          <span class="category_title">인문</span>
+              <span class="book_count"> (2)</span>                        <span class="mobile_active_border"></span>
+          </a>
+        </li>
+              <li>
+          <a href="http://ridibooks.com/search/?q=%EC%A0%95%EC%9D%98%EB%9E%80&category=%EC%A0%95%EC%B9%98%2F%EC%82%AC%ED%9A%8C">
+                          <span class="category_title">정치/사회</span>
+              <span class="book_count"> (2)</span>                        <span class="mobile_active_border"></span>
+          </a>
+        </li>
+              <li>
+          <a href="http://ridibooks.com/search/?q=%EC%A0%95%EC%9D%98%EB%9E%80&category=%EA%B8%B0%EB%8F%85%EA%B5%90%28%EA%B0%9C%EC%8B%A0%EA%B5%90%29">
+                          <span class="category_title">기독교(개신교)</span>
+              <span class="book_count"> (1)</span>                        <span class="mobile_active_border"></span>
+          </a>
+        </li>
+              <li>
+          <a href="http://ridibooks.com/search/?q=%EC%A0%95%EC%9D%98%EB%9E%80&category=%EB%8C%80%EC%9E%85+%EB%85%BC%EC%88%A0">
+                          <span class="category_title">대입 논술</span>
+              <span class="book_count"> (1)</span>                        <span class="mobile_active_border"></span>
+          </a>
+        </li>
+              <li>
+          <a href="http://ridibooks.com/search/?q=%EC%A0%95%EC%9D%98%EB%9E%80&category=%EC%B2%AD%EC%86%8C%EB%85%84">
+                          <span class="category_title">청소년</span>
+              <span class="book_count"> (1)</span>                        <span class="mobile_active_border"></span>
+          </a>
+        </li>
+          </ul>
+      </article>
+
+        </div>
+        <hr class="clear_both">            </section>
+      </div>
+    </div><hr>
+
+              <section class="module_notice notice_footer">
+        <article class="notice_wrap">
+          <h2 class="notice_title"><a href="http://ridibooks.com/support/notice">공지사항 <span class="icon-arrow_1_right"></span></a></h2>
+          <ul class="notice_list">
+                      <li style="display: list-item; top: 0px;"><a href="http://ridibooks.com/support/notice/353">[리디샵] 모든 상품이 무료 배송!</a></li>
+                      <li style="top: 22px; display: list-item;"><a href="http://ridibooks.com/support/notice/336">[100가지 개선] 듣기 기능(TTS) 오픈 #27</a></li>
+                      <li style="top: 22px; display: list-item;"><a href="http://ridibooks.com/support/notice/330">[리디샵] 2월 2주차 BEST 리뷰 당선자 발표</a></li>
+                      <li style="top: 22px; display: list-item;"><a href="http://ridibooks.com/support/notice/301">[리디샵] 리뷰 Reward 프로그램 시즌2, 2월 28일 종료 예정!</a></li>
+                    </ul>
+        </article>
+      </section><hr>      <footer id="books_footer">
+        <div class="footer_wrap">
+          <div class="corp_info">
+            <h2 class="hidden">회사 정보</h2>
+            <ul class="info_contact">
+              <li class="contact_tel font_verdana"><span class="icon-call_center"></span><span class="hidden">전화번호 : </span>1644-0331</li>
+              <li class="contact_email"><a href="mailto:help@ridibooks.com"><span class="hidden">이메일 : </span>help@ridibooks.com</a></li>
+            </ul>
+            <address class="info_address">
+              리디 (주) / 대표 배기식 / 서울시 강남구 대치동 891-46 V&amp;S빌딩 9층 <br>
+              사업자등록번호 120-87-27435 / 통신판매업신고 제 2009-서울강남 35-02139호 <br>
+            </address>
+            <p class="info_security">
+              개인정보관리책임자 <a class="security_email" href="mailto:security@ridicorp.com">security@ridicorp.com</a>
+            </p>
+            <ul class="info_link">
+              <li><a class="link_prov" href="http://ridibooks.com/support/notice/349">이용약관</a></li>
+              <li><a class="link_personal" href="http://ridibooks.com/support/notice/335">개인정보취급방침</a></li>
+              <li><a class="link_business" href="http://ftc.go.kr/info/bizinfo/communicationList.jsp" target="_blank">사업자 정보 확인</a></li>
+            </ul>
+            <p class="info_copyright">© RIDI Corp.</p>
+          </div>          <div class="other_menu">
+            <h2 class="hidden">바로가기</h2>
+            <ul class="other_menu_wrap">
+              <li>
+                <h3>About</h3>
+                <ul class="menu_list">
+                  <li><a href="http://ridicorp.com/" target="_blank">회사 소개</a></li>
+                  <li><a href="http://static.ridibooks.com/introduce/" target="_blank">리디북스 소개</a></li>
+                  <li><a href="http://ridibooks.com/support/app/download" target="_blank">앱 다운로드</a></li>
+                  <li><a href="http://ridicorp.com/#section2" target="_blank">인재채용</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>서비스 이용</h3>
+                <ul class="menu_list">
+                  <li><a class="login_required" href="http://ridibooks.com/order/checkout/cash">리디캐시 충전</a></li>
+                  <li><a href="http://ridibooks.com/support/notice">공지사항</a></li>
+                  <li><a href="http://ridibooks.com/support/notice/update">업데이트 소식</a></li>
+                  <li><a href="http://ridibooks.com/support/app/download">뷰어 다운로드</a></li>
+                  <li><a href="http://ridibooks.com/support/">고객센터</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>파트너십</h3>
+                <ul class="menu_list">
+                  <li><a href="http://ridibooks.com/event/67">제휴 문의</a></li>
+                  <li><a href="http://cp.ridibooks.com/" target="_blank">CP사이트</a></li>
+                  <li><a href="http://ridibooks.com/event/409">대량구매</a></li>
+                  <li><a href="http://ridibooks.com/submit">원고 투고</a></li>
+                </ul>
+              </li>
+              <li>
+                <h3>리디북스 소식</h3>
+                <ul class="menu_list list_news">
+                  <li><a href="http://ridibooks.com/account/modify"><span class="icon_wrap"><span aria-hidden="true" class="icon-mail"></span></span> 뉴스레터</a></li>
+                  <li><a href="https://www.facebook.com/ridibooks.page" target="_blank"><span class="icon_wrap"><span aria-hidden="true" class="icon-facebook_2"></span></span> 페이스북</a></li>
+                  <li><a href="https://twitter.com/ridibooks" target="_blank"><span class="icon_wrap"><span aria-hidden="true" class="icon-twitter_2"></span></span> 트위터</a></li>
+                  <li><a href="http://blog.naver.com/ridibooks" target="_blank"><span class="icon_wrap"><span aria-hidden="true" class="icon-naver_blog"></span></span> 블로그</a></li>
+                </ul>
+              </li>
+            </ul>          </div>        </div>        <ul class="footer_badge">
+          <li class="badge_wrapper">
+            <div class="badge_logo">
+              <a href="javascript:Rankey_Mark_Win();"><img src="./test_ridibooks_files/logo1_certification.png" class="badge_img" alt="랭키닷컴 전자첵분야 1위"></a>
+            </div>            <p class="badge_text">
+              <strong class="text_main">1등 전자책서점 리디북스!</strong>              <span class="text_sub">랭키닷컴 전자책분야 1위 (2014)</span>            </p>          </li>        </ul>      </footer>
+      </div>
+      <script src="./test_ridibooks_files/account.login_signup_popup.min.js"></script>
+<div id="login_popup" class="module_dim_popup" style="display: none;">
+  <div class="dim_bg" onclick="hideDimPopup()"></div>  <div class="popup_box">
+    <button class="popup_box_close_button" type="button" onclick="hideDimPopup()"><span class="icon-close_1"></span><span class="hidden">닫기</span></button>
+    <div class="popup_contents_wrapper"></div>
+  </div></div><div id="signup_popup" class="module_dim_popup" style="display: none;">
+  <div class="dim_bg" onclick="hideDimPopup()"></div>  <div class="popup_box">
+    <button class="popup_box_close_button" type="button" onclick="hideDimPopup()"><span class="icon-close_1"></span><span class="hidden">닫기</span></button>
+    <div class="popup_contents_wrapper"></div>
+  </div></div><div id="signup_complete_popup" class="module_dim_popup" style="display: none;">
+  <div class="dim_bg" onclick="hideDimPopup()"></div>  <div class="popup_box">
+    <button class="popup_box_close_button" type="button" onclick="hideDimPopup()"><span class="icon-close_1"></span><span class="hidden">닫기</span></button>
+    <div class="popup_contents_wrapper"></div>
+  </div></div><div id="find_id_popup" class="module_dim_popup" style="display: none;">
+  <div class="dim_bg" onclick="hideDimPopup()"></div>  <div class="popup_box">
+    <button class="popup_box_close_button" type="button" onclick="hideDimPopup()"><span class="icon-close_1"></span><span class="hidden">닫기</span></button>
+    <button class="popup_box_back_button" type="button" onclick="showLoginPopup()"><span class="icon-arrow_3_left"></span><span class="hidden">로그인페이지로</span></button>
+    <div class="popup_contents_wrapper"></div>
+  </div></div><div id="find_password_popup" class="module_dim_popup" style="display: none;">
+  <div class="dim_bg" onclick="hideDimPopup()"></div>  <div class="popup_box">
+    <button class="popup_box_close_button" type="button" onclick="hideDimPopup()"><span class="icon-close_1"></span><span class="hidden">닫기</span></button>
+    <button class="popup_box_back_button" type="button" onclick="showLoginPopup()"><span class="icon-arrow_3_left"></span><span class="hidden">로그인페이지로</span></button>
+    <div class="popup_contents_wrapper"></div>
+  </div></div>
+      <iframe id="iframe_book_download" width="0" height="0"></iframe>
+  
+  <!-- Google Code for 2013.11_&#47532;&#46356;&#48513;&#49828; &#47700;&#51064; -->
+  <!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 980602559;
+    var google_conversion_label = "_bRRCKGAlQcQv53L0wM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+  </script>
+  <div style="display:none;">
+    <script type="text/javascript" src="./test_ridibooks_files/conversion.js">
+    </script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="./test_ridibooks_files/saved_resource.html" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/980602559/?frame=0&amp;random=1423927835336&amp;cv=7&amp;fst=1423927835336&amp;num=1&amp;fmt=1&amp;label=_bRRCKGAlQcQv53L0wM&amp;guid=ON&amp;u_h=900&amp;u_w=1440&amp;u_ah=805&amp;u_aw=1440&amp;u_cd=24&amp;u_his=4&amp;u_tz=540&amp;u_java=true&amp;u_nplug=8&amp;u_nmime=32&amp;frm=0&amp;url=http%3A//ridibooks.com/search/%3Fq%3D%25EC%25A0%2595%25EC%259D%2598%25EB%259E%2580&amp;ref=http%3A//ridibooks.com/search/%3Fq%3Djustice&amp;vis=1" /&gt;</iframe>
+  </div>
+  <noscript>
+    &lt;div style="display:inline;"&gt;
+      &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/980602559/?value=0&amp;amp;label=_bRRCKGAlQcQv53L0wM&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+    &lt;/div&gt;
+  </noscript>
+
+  <script>
+  var Ridi = Ridi || {};
+  Ridi.globals = {
+    isLoggedIn: false,
+    userId: '',
+    isPc: true,
+    isRidiApp: false,
+    apiUrl: '//api.ridibooks.com',
+    sslHostLink: 'https://ridibooks.com'
+  };
+</script>
+    
+  
+  
+
+</body><iframe src="./test_ridibooks_files/commandbox.html" id="vichrome-commandframe" seamless="" style="display: none;"></iframe></html>
