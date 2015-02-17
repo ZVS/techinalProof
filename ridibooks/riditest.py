@@ -47,7 +47,9 @@ def main():
 
     res=rsearch.search('정의란')
     for iters in res:
-        print iters[0]
+        s=iters[0]
+        s=s.strip()
+        print s
 
 
 if __name__=='__main__':
