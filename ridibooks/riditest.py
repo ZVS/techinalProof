@@ -24,7 +24,8 @@ class ridiSearch:
 
         booksinfo = soup.find_all('div', ['book_wrapper'])
 
-
+        if not booksinfo:
+            return None
 
         #iter through book information
         for iter in booksinfo:
@@ -36,7 +37,6 @@ class ridiSearch:
             rtnAuthor=iter.find('li', ['author']).a.text
             self.rtnResult.append([rtnTitle, rtnImg, rtnAuthor, rtnPub, rtnPrice, rtnLink])
 
-
         return self.rtnResult
 
 
@@ -45,11 +45,17 @@ class ridiSearch:
 def main():
     rsearch=ridiSearch()
 
-    res=rsearch.search('정의란')
+    res=rsearch.search('풀 메탈flr')
+    if res is None:
+        print '검색 결과가 없습니다.'
+        return
+
     for iters in res:
         s=iters[0]
         s=s.strip()
         print s
+
+    return
 
 
 if __name__=='__main__':
